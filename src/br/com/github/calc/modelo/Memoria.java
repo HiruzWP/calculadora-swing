@@ -10,9 +10,14 @@ public class Memoria {
 		
 		
 	}
-
+	
 	public static Memoria getInstancia() {
 		return instancia;
+	}
+	
+	public void adicionarObservador() {
+		
+		
 	}
 	
 	public String getTextoAtual() {
