@@ -55,7 +55,8 @@ public class Memoria {
 			
 		} else if(tipoComando == tipoComando.NUMERO 
 				|| tipoComando == tipoComando.VIRGULA) {
-			text
+			textoAtual = substituir ? texto : textoAtual + texto;
+			substituir = false;
 		}
 		
 		observadores.forEach(o -> o.valorAlterado(getTextoAtual()));
@@ -88,7 +89,7 @@ public class Memoria {
 				return TipoComando.SUB;
 			}else if("=".equals(texto)){
 				return TipoComando.IGUAL;
-			}else if(",".equals(texto)){
+			}else if(",".equals(texto) && !textoAtual.contains(",")){
 				return TipoComando.VIRGULA;
 			}
 		}
