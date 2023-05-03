@@ -17,8 +17,8 @@
 
 <h3>Tecnologias utilizadas:</h3>
 
-`-Java`
+`•Java`
 
-`-Swing`
+`•Swing`
 
-`-Eclipse`
+`•Eclipse`
